@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
     const hitungFiboBtn = document.getElementById("hitungFibo");
-    const fibonacciResult = document.getElementById("hasilFibo");
+    const hasilFibo = document.getElementById("hasilFibo");
 
     hitungFiboBtn.addEventListener("click", () => {
         const n = parseInt(document.getElementById("fiboNum").value);
         const result = hitungFibo(n);
-        fibonacciResult.textContent = `Deret Fibonacci: ${result.join(", ")}`;
+        hasilFibo.textContent = `Deret Fibonacci: ${result.join(", ")}`;
     });
 
     function hitungFibo(n) {
