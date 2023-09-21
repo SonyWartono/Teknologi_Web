@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const hitungFiboBtn = document.getElementById("hitungFibo");
-    const fibonacciResult = document.getElementById("fibonacciResult");
+    const fibonacciResult = document.getElementById("hasilFibo");
 
     hitungFiboBtn.addEventListener("click", () => {
         const n = parseInt(document.getElementById("fiboNum").value);
