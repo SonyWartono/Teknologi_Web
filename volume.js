@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             hasilVol.textContent = "Masukkan panjang, lebar, dan tinggi yang valid.";
         } else {
             const volume = panjang * lebar * tinggi; // Menghitung volume cuboid
-            hasilVol.textContent = `Volume Cuboid: ${volume} cm`;
+            hasilVol.textContent = `Volume Cuboid: ${volume} cm³`;
         }
     });
 });
