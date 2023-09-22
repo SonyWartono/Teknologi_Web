@@ -16,17 +16,36 @@
             <a href="volume.html">Hitung Volume</a>
         </aside>
         <div class="content">
-            <h1>Kalkulator Cuboid</h1>
-            <label for="hitungFibo">Masukkan Bilangan (cm):</label>
-            <br><br>
-            <input type="number" id="panjang" placeholder="Panjang">
-            <br>
-            <input type="number" id="lebar" placeholder="Lebar">
-            <br>
-            <input type="number" id="tinggi" placeholder="Tinggi">
-            <br><br>
-            <button id="hitungVol">Hitung Volume</button>
-            <p id="hasilVol"></p>
+            <h1>Kalkulator Volume</h1>
+            <form id="volumeForm">
+                <label for="shapeSelect">Pilih Bentuk:</label>
+                <select id="shapeSelect">
+                    <option value="cube"selected>Kubus</option>
+                    <option value="rectangularPrism">Balok</option>
+                    <option value="sphere">Bola</option>
+                    <option value="cylinder">Tabung</option>
+                    <option value="cone">Kerucut</option>
+                </select>
+                <div id="shapeInputs" class="hidden">
+                    <table>
+                        <tr>
+                            <td><label id="inputLabel1" for="input1"></label></td>
+                            <td><input type="number" id="input1" placeholder=""></td>
+                        </tr>
+                        <tr>
+                            <td><label id="inputLabel2" class="hidden" for="input2"></label></td>
+                            <td><input type="number" id="input2" class="hidden" placeholder=""></td>
+                        </tr>
+                        <tr>
+                            <td><label id="inputLabel3" class="hidden" for="input3"></label></td>
+                            <td><input type="number" id="input3" class="hidden" placeholder=""></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <button type="button" id="calculateVolume" class="green-button">Hitung</button>
+                </div>
+                <p id="volumeResult"></p>
+            </form>
 
             <script src="volume.js"></script>
         </div>    
